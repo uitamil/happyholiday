@@ -177,6 +177,26 @@ section#vehicle .col-sm-12 {
 	.foo-2 {
 		margin-bottom: 10px;
 	}
+	.gallery-img-wrap {
+		height: auto;
+		width: auto;
+		padding: 5px;
+	}
+	section#gallery {
+		padding-top: 50px;
+	}
+	section.gallery-img {
+		padding-bottom: 50px;
+	}
+	section#places ,section#about,section#vehicle,.footer-content,.service{
+		padding: 50px 0px;
+	}
+	.gallery-content{
+		margin-top: 5px;
+	}
+	.gallary-header.text-center.booking-cnt h2 {
+		margin-bottom: 20px;
+	}
 }/*max-width:767px*/
 
 
