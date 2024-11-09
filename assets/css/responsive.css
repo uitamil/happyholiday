@@ -182,7 +182,7 @@ section#vehicle .col-sm-12 {
 		width: auto;
 		padding: 5px;
 	}
-	section#gallery {
+	section#gallery ,.outbound{
 		padding-top: 50px;
 	}
 	section.gallery-img {
