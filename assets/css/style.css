@@ -606,7 +606,7 @@ html,body{
 /*single-footer-item*/
 .single-footer-item{
     font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 .single-footer-item h2{
     color:#565a5c;
@@ -655,12 +655,12 @@ html,body{
     
 }
 .single-footer-txt p a:hover{
-    -webkit-transition:scaleX(1.2);
+    /* -webkit-transition:scaleX(1.2);
     -moz-transition:scaleX(1.2);
     -ms-transition:scaleX(1.2);
     -o-transition:scaleX(1.2);
-    transform:scaleX(1.2);
-    color: #c88930;
+    transform:scaleX(1.2); */
+    color: #55432b;
 }/*single-footer-txt*/
 
 .footer-copyright hr{
