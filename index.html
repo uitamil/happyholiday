@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
 
         <!-- TITLE OF SITE -->
-        <title>Happy Holiday</title>
+        <title>Happy Holidays</title>
 
         <!-- favicon img -->
         <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico" />
@@ -47,7 +47,7 @@
         <header class="top-area">
             <div class="header-area">
                 <div class="container">
-                    <div class="row">
+                    <div class="row header-row">
                         <div class="col-sm-2">
                             <div class="logo">
                                 <a href="index.html">
@@ -105,7 +105,7 @@
                                         From Dream to Destination Your Journey Awaits!
                                     </h2>
                                     <p>
-                                        Discover seamless travel solutions with Happy Holiday. From flight bookings to tailored tour packages and memorable event venues, we turn your travel dreams into reality. Let us handle the details so
+                                        Discover seamless travel solutions with Happy Holidays. From flight bookings to tailored tour packages and memorable event venues, we turn your travel dreams into reality. Let us handle the details so
                                         you can enjoy the journey!
                                     </p>
                                 </div>
@@ -139,8 +139,8 @@
                             About Us
                         </h2>
                         <p>
-                            At Happy Holiday, we believe that every journey should be a celebration, and every destination a dream come true. As a full-service travel company, we offer a complete range of services designed to make travel
-                            planning simple, enjoyable, and entirely stress-free. Whether you're booking tickets, arranging special event venues, or selecting from our exclusive tour packages, Happy Holiday is here to bring your travel
+                            At Happy Holidays, we believe that every journey should be a celebration, and every destination a dream come true. As a full-service travel company, we offer a complete range of services designed to make travel
+                            planning simple, enjoyable, and entirely stress-free. Whether you're booking tickets, arranging special event venues, or selecting from our exclusive tour packages, Happy Holidays is here to bring your travel
                             dreams to life.
                         </p>
                     </div>
@@ -914,7 +914,7 @@
                                         <div class="add-c">
                                             <span><img src="assets/images/phone.png" /></span> Phone Number:
                                         </div>
-                                        <p class="foot-email"><a href="tel:919994188484">+91 99941 88484</a> <br>
+                                        <p class="foot-email"><a href="tel:919994188484">+91 99941 88484</a> ,
                                             <a href="tel:9104524205617">+91 0452 4205617</a>
                                         </p>
                                        
@@ -943,7 +943,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea class="form-control" id="message" name="Message"></textarea>
+                                    <textarea class="form-control" id="message" name="Message" rows="5"></textarea>
                                 </div>
                                 <input class="btn btn-primary" type="submit" value="Submit" />
                             </form>
@@ -1004,5 +1004,37 @@
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
         <script src="assets/js/lightbox.js"></script>
+        <script>
+        $(document).ready(function () {
+  // Cache selectors
+  const sections = $("section");
+  const navLinks = $(".navbar-right .smooth-menu a");
+
+  $(window).on("scroll", function () {
+    let currentSection = "";
+
+    // Loop through each section
+    sections.each(function () {
+      const sectionTop = $(this).offset().top;
+      const sectionHeight = $(this).outerHeight();
+
+      // Check if the section is in view
+      if ($(window).scrollTop() >= sectionTop - sectionHeight / 3) {
+        currentSection = $(this).attr("id");
+      }
+    });
+
+    // Remove active class from all links and add to the current section's link
+    navLinks.removeClass("active");
+    navLinks.each(function () {
+      if ($(this).attr("href") === `#${currentSection}`) {
+        $(this).addClass("active");
+      }
+    });
+  });
+});
+
+
+        </script>
     </body>
 </html>
