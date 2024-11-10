@@ -901,3 +901,20 @@ p.foot-email a {
 .footer-content input.form-control {
     height: 45px;
 }
+.call {
+    position: fixed;
+    bottom: 90px;
+    height: 50px;
+    z-index: 99;
+    width: 55px;
+    right: 24px;
+}
+a.call-app-icon {
+    border-radius: 50%;
+    background: #000;
+    display: block;
+    padding: 8px;
+}
+.call-app-icon img{
+    filter: invert(1);
+}
